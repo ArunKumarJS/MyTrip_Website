@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p class="banner-text">Book now to get exciting travel deals. Upto 40% off on credit card payments</p>
+        <p class="banner-offer">Offers ends in <span id="banner-timer"></span></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Weather</a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Get a Quote</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="./assets/welcome-image.svg" alt="">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-head">
+                    Life is short<br/>and the world is wide!
+                </h1>
+                <p>Stay at the comfort of your homes and book a trip to travel after the post pandemic era.</p>
+                <button class="theme-btn">Plan a Trip</button>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h3>The Weather Channel</h3>
+            <div class="weather-container" id="weather-container"></div>            
+        </section>
+
+        <section class="destinations">
+            <h3>Featured Destinations</h3>
+            <div class="image-container" id="gallery"></div>
+        </section>
+
+        <section class="promo">
+            <div class="promo-text">
+                <h2>Plan a Trip</h2>
+                <p>Make your vacation the most<br/>memorable one</p>
+            </div>
+        </section>
+
+        <section class="quote">
+            <h3>Travelling as a group? Get a Quote</h3>
+            <form action="">
+                <label for="username">Your Name</label>
+                <input type="text" name="username" id="" required>
+                <label for="number">Contact No</label>
+                <input type="tel" name="number" id="" required>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="" required>
+                <button type="submit" class="theme-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">
+
+            <section class="footer-item">
+                <h4>Tripzone</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-item">
+                <h4>Main Offices</h4>
+                <ul>
+                    <li><a href="#">The United States</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Brazil</a></li>
+                    <li><a href="#">Canada</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-item">
+                <h4>Sub Offices</h4>
+                <ul>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">England</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-item">
+                <h4>Disclaimer</h4>
+                <p>This layout is created as a part of Sirius UI Recruitments. All the above content has no direct relation with Sirius business.</p>
+            </section>
+        </section>
+    </footer>
+    <script src="timer.js"></script>
+    <script src="weather.js"></script>
+    <script src="city.js"></script>
+</body>
+</html>

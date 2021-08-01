@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+$theme-color-start: #000000;
+$theme-color-end: #133357;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.theme-btn{
+    background: linear-gradient(to right, $theme-color-start, $theme-color-end);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 3px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+// Header
+
+header{
+    background: linear-gradient(to right, $theme-color-start, $theme-color-end);
+    width: 100%;
+    height: 10vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-offer{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+// Navigation
+nav{
+
+    ul{
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 10vh;
+        width: 90%;
+        margin: auto;
+        li{
+            margin-right: 50px;
+            a{
+                color: $theme-color-start;
+                text-transform: uppercase;
+            }
+        }
+           
+    }
+}
+
+
+
+
+
+.hero{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .hero-image{
+        flex-basis: 50%;
+        text-align: center;
+        img{
+            width: 400px;
+            max-width: 100%;
+        }
+    }
+
+    .hero-content{
+        // margin-left: 10px;
+        flex-basis: 40%;
+        font-family: 'Roboto', sans-serif;
+        .hero-head{
+            font-size: 40px;
+            letter-spacing: 0.5px;
+        }
+        p{
+            margin: 20px 0px;
+        }
+    }
+}
+
+
+
+
+
+// Promo Section
+
+.promo{
+    background-image: url("./assets/promo-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    // background-position: center;
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    .promo-text{
+        width: 85%;
+        margin: 60px auto;
+        font-family: 'Roboto', sans-serif;
+        h2{
+            text-transform: uppercase;
+            font-size: 50px;
+            // margin-bottom: 50px;
+            letter-spacing: 3px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 26px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    
+    }
+}
+
+
+
+// Quotes Section
+
+.quote{
+    width: 40%;
+    margin: 50px auto;
+    h3{
+        font-family: 'Roboto Slab', serif;
+        color: $theme-color-end;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        input, label{
+            width: 100%;
+            margin: 10px 0px 5px 0px;
+        }
+
+        label{
+            color: #aaaaaa;
+            font-weight: 500;
+        }
+
+        input{
+            padding: 13px 2px;
+            border: 1px solid #aaaaaa;
+            border-radius: 3px;
+        }
+        button{
+            margin-top: 25px;
+        }
+
+    }
+}
+
+// Footer Section
+
+footer{
+    background: linear-gradient(to right, $theme-color-start, $theme-color-end);
+    width: 100%;
+    padding: 50px 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    .footer-container{
+        width: 85%;
+        // background-color: red;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .footer-item{
+            h4{
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    padding-top: 15px;
+                    font-size: 20px;
+                }
+            }
+            p{
+                padding-top: 15px;
+                font-size: 20px;
+            }
+            &:nth-child(4){
+                flex-basis: 35%;
+            }
+        }
+    }
+
+}
+
+
+// Destinations
+
+.destinations{
+    // background-color: aqua;
+    width: 85%;
+    margin: 0px auto 50px auto;
+    h3{
+        font-family: 'Roboto Slab', serif;
+        color: $theme-color-end;
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .image-container{
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: space-between;
+
+        cursor: grab;
+        
+
+        .image-box{
+            margin-right: 30px;
+            font-family: 'Roboto', sans-serif;
+            .image-style{
+                width: 300px;
+                height: 300px;
+                border-bottom-right-radius: 15px;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 20px;
+                color: #707070;
+            }
+        }
+    }
+}
+
+.image-container::-webkit-scrollbar {
+    // display: none;
+    overflow: hidden;
+}
+
+
+
+// weather
+
+.weather{
+    width: 85%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    h3{
+        background-color: $theme-color-end;
+        padding: 20px 35px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .weather-container{
+        background-color: yellowgreen;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 50px;
+        .weather-box{
+            // background-color: rebeccapurple;
+            flex-grow: 1;
+            // flex-basis: 25%;
+            padding: 30px;
+
+            &:nth-child(1){
+                background-color: #0D7E88;
+            }
+            &:nth-child(2){
+                background-color: #D09378;
+            }
+            &:nth-child(3){
+                background-color: #405B5D;
+            }
+            &:nth-child(4){
+                background-color: #74A748;
+            }
+            .city_name{
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-weight: 500;
+                
+            }
+            .city_temp{
+                font-size: 80px;
+                font-weight: bold;
+            }
+            .weather-style{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 760px){
+
+    header{
+        padding: 30px;
+    }
+
+    nav{
+        ul{
+            justify-content: space-around;
+            // width: 100%;
+            li{
+                margin: auto;
+            }
+        }
+    }
+
+    .hero{
+        height: 100%;
+        flex-direction: column;
+        .hero-image{
+            margin-bottom: 30px;
+        }
+
+        .hero-content{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .weather{
+        h3{
+            text-align: center;
+            font-size: 22px;
+            padding: 20px 30px;
+        }
+        .weather-container{
+            // flex-wrap: nowrap;
+            .weather-box{
+                flex-basis: 50%;
+
+                .city_name{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    
+                }
+                .city_temp{
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+                .weather-style{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+
+    .promo{
+        background-size: contain;
+        max-width: 100%;
+        height: 100%;
+        .promo-text {
+            width: 100%;
+            margin-left: 20px;
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+                // margin-bottom: 5px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .quote{
+        width: 80%;
+        margin-top: 10px;
+        h3{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-container{
+        flex-direction: column;
+        .footer-item{
+            margin-bottom: 50px;
+            h4{
+                margin-top: 40px;
+            }
+        }
+    }
+
+}
